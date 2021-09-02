@@ -1,4 +1,4 @@
-// 8/9 Testcase passed
+// All Testcase passed
 
 #include<iostream>
 #include<cmath>
@@ -14,11 +14,16 @@ void fib(int n,int size) {
    }
    for (i = 0; i < n; i++)
    {
-   	if(f[i]>=pow(10,size-1))
-    {
-      cout<<i;
-      break;
-   }
+        if(size==1)
+        {
+            cout<<"0";
+            break;
+        }
+        else if(f[i]>=pow(10,size-1))
+        {
+            cout<<i;
+            break;
+        }
    }
 
 }
